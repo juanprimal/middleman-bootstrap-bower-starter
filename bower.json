@@ -1,0 +1,21 @@
+{
+  "name": "base middleman web",
+  "version": "0.0.0",
+  "authors": [
+    "Pedro Juan Criollo Romo <pedrojuancr@gmail.com>"
+  ],
+  "description": "A middleman web base configuration",
+  "license": "MIT",
+  "homepage": "www.kommit.co",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
