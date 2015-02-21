@@ -1,11 +1,11 @@
-# Middleman-Bootstrap-Bower
+# Middleman bootstrap bower starter project
 A web start project using middleman gem with bootstrap and bower to manage dependencies
 
 ## Usage
 
 To see this awesome starter template in action type in your console:
 
-1. `git clone git@github.com:juanprimal/middleman-bootstap-bower.git`
+1. `git clone git@github.com:juanprimal/middleman-bootstrap-bower-starter.git`
 2. `bundle install`
 3. `bower install`
 4. `middleman`
