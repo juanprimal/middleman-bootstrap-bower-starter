@@ -1,0 +1,66 @@
+/ Page Content
+.container
+  / Page Heading/Breadcrumbs
+  .row
+    .col-lg-12
+      %h1.page-header
+        About
+        %small Subheading
+      %ol.breadcrumb
+        %li
+          %a{:href => "/"} Home
+        %li.active About
+  / /.row
+  / Intro Content
+  .row
+    .col-md-6
+      %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
+    .col-md-6
+      %h2 About Modern Business
+      %p
+        = lorem.sentences 2
+      %p
+        = lorem.sentences 2
+      %p
+        = lorem.sentences 2
+  / /.row
+  / Team Members
+  .row
+    .col-lg-12
+      %h2.page-header Our Team
+
+    - seis = [1,2,3,4,5,6]
+    - seis.each do |i|
+      .col-md-4.text-center
+        .thumbnail
+          %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
+          .caption
+            %h3
+              John Smith
+              %br/
+              %small Job Title
+            %p
+              = lorem.words 10
+            %ul.list-inline
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-2x.fa-facebook-square
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-2x.fa-linkedin-square
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-2x.fa-twitter-square
+
+  / /.row
+  / Our Customers
+  .row
+    .col-lg-12
+      %h2.page-header Our Customers
+    - seis = [1,2,3,4,5,6]
+    - seis.each do |i|
+      .col-md-2.col-sm-4.col-xs-6
+        %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
+
+  / /.row
+  %hr
