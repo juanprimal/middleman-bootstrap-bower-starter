@@ -19,3 +19,5 @@ gem 'compass', '~> 1.0.3'
 # Twitter Bootstrap
 gem 'bootstrap-sass', '~> 3.3.3'
 
+gem 'font-awesome-middleman'
+
