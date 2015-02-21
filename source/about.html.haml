@@ -8,7 +8,7 @@
         %small Subheading
       %ol.breadcrumb
         %li
-          %a{:href => "index.html"} Home
+          %a{:href => "/"} Home
         %li.active About
   / /.row
   / Intro Content
@@ -17,144 +17,50 @@
       %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
     .col-md-6
       %h2 About Modern Business
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?
+      %p
+        = lorem.sentences 2
+      %p
+        = lorem.sentences 2
+      %p
+        = lorem.sentences 2
   / /.row
   / Team Members
   .row
     .col-lg-12
       %h2.page-header Our Team
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
-    .col-md-4.text-center
-      .thumbnail
-        %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
-        .caption
-          %h3
-            John Smith
-            %br/
-            %small Job Title
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.
-          %ul.list-inline
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-facebook-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-linkedin-square
-            %li
-              %a{:href => "#"}
-                %i.fa.fa-2x.fa-twitter-square
+
+    - seis = [1,2,3,4,5,6]
+    - seis.each do |i|
+      .col-md-4.text-center
+        .thumbnail
+          %img.img-responsive{:alt => "", :src => "http://placehold.it/750x450"}/
+          .caption
+            %h3
+              John Smith
+              %br/
+              %small Job Title
+            %p
+              = lorem.words 10
+            %ul.list-inline
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-2x.fa-facebook-square
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-2x.fa-linkedin-square
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-2x.fa-twitter-square
+
   / /.row
   / Our Customers
   .row
     .col-lg-12
       %h2.page-header Our Customers
-    .col-md-2.col-sm-4.col-xs-6
-      %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
-    .col-md-2.col-sm-4.col-xs-6
-      %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
-    .col-md-2.col-sm-4.col-xs-6
-      %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
-    .col-md-2.col-sm-4.col-xs-6
-      %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
-    .col-md-2.col-sm-4.col-xs-6
-      %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
-    .col-md-2.col-sm-4.col-xs-6
-      %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
+    - seis = [1,2,3,4,5,6]
+    - seis.each do |i|
+      .col-md-2.col-sm-4.col-xs-6
+        %img.img-responsive.customer-img{:alt => "", :src => "http://placehold.it/500x300"}/
+
   / /.row
   %hr

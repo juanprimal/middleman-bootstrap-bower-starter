@@ -8,72 +8,45 @@
         %small Subheading
       %ol.breadcrumb
         %li
-          %a{:href => "index.html"} Home
+          %a{:href => "/"} Home
         %li.active Three Column Portfolio
   / /.row
   / Projects Row
   .row
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    - tres = [1,2,3]
+    - tres.each do |i|
+      .col-md-4.img-portfolio
+        %a{:href => "portfolio-item.html"}
+          %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+        %h3
+          %a{:href => "portfolio-item.html"} Project Name
+        %p
+          = lorem.sentences 2
   / /.row
   / Projects Row
   .row
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    - tres = [1,2,3]
+    - tres.each do |i|
+      .col-md-4.img-portfolio
+        %a{:href => "portfolio-item.html"}
+          %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+        %h3
+          %a{:href => "portfolio-item.html"} Project Name
+        %p
+          = lorem.sentences 2
   / Projects Row
   .row
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    .col-md-4.img-portfolio
-      %a{:href => "portfolio-item.html"}
-        %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
-      %h3
-        %a{:href => "portfolio-item.html"} Project Name
-      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    - tres = [1,2,3]
+    - tres.each do |i|
+      .col-md-4.img-portfolio
+        %a{:href => "portfolio-item.html"}
+          %img.img-responsive.img-hover{:alt => "", :src => "http://placehold.it/700x400"}/
+        %h3
+          %a{:href => "portfolio-item.html"} Project Name
+        %p
+          = lorem.sentences 2
   / /.row
-  %hr/
+  %hr
   / Pagination
   .row.text-center
     .col-lg-12
