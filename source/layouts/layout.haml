@@ -7,6 +7,12 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "all"
+    %link{:rel => "shortcut icon", :type => "image/png", :href => "../images/favicon.png"}/
+    %link{:rel => "icon", :type => "image/png", :href => "../images/favicon.png"}/
+    %link{:rel => "icon", :type => "image/x-icon", :href => "../images/favicon.ico"}/
+    %link{:rel => "apple-touch-icon-precomposed", :sizes =>"114x114", :href => "../images/apple-touch-icon-114x114-precomposed.png"}/
+    %link{:rel => "apple-touch-icon-precomposed", :sizes =>"72x72", :href => "../images/apple-touch-icon-72x72-precomposed.png"}/
+    %link{:rel => "apple-touch-icon-precomposed", :href => "../images/apple-touch-icon-57x57-precomposed.png"}/
   %body{:class => page_classes}
     %nav.navbar.navbar-default.navbar-fixed-top
       .container
